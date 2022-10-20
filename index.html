@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            background: rgb(27, 27, 27);
+            color: rgb(231, 17, 17);
+            padding: 6px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body style="background: gray; font-size: 15px;">
+    <form>
+        <input required maxlength="2" value="6654654654"/>
+        <input value="SEND" type="submit">
+        <br/>
+        <input max ="5" min="1" step="3" type="number"/> 
+        <input value="SEND" type="submit"/>
+    </form>
+    <form method="post" action="https://www.21vek.by/mobile/">
+        <!-- выпадающий список -->
+        <!-- чекбоксы -->
+        <!-- rediobutton -->
+        <!-- input-->
+        <input name="filter[price][from]" placeholder="цена от" type="number" min="0" max="2500" value="100" />
+        <input name="filter[price][to]" placeholder="цена до" type="number" min="0" max="2500" value="100" />
+        <br />
+
+        <input value="apple" name="filter[producer][]" type="checkbox" />
+        <span>Apple</span>
+        <input value="honor" name="filter[producer][]" type="checkbox" />
+        <span>Honor</span>
+        <br />
+
+        <select name="filter[2499]">
+            <option disabled selected></option>
+            <option value="5837">Белый</option>
+            <option value="5836">Черный</option>
+            <option value="5840">Золотистый</option>
+        </select>
+        <br>
+
+        <div>RAM</div>
+        <input value="322493" name="filter[50253][]" type="radio" />
+        <span>2 gb</span>
+        <br>
+
+        <input value="322513" name="filter[50253][]" type="radio" />
+        <span>4 gb</span>
+        <br>
+
+        <input value="324154" name="filter[50253][]" type="radio" />
+        <span>6 gb</span>
+        <br>
+
+        <input value="Find" type="submit" />    
+    </form>
+</body>
+</html>
